@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% Author : Horlescu Adrian Marian
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=black,
+    filecolor=black
+}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Horlescu Adrian Marian} \\ \vspace{1pt}
+    \small +40-732-726-835 $|$ 
+    \href{mailto:adrian.horlescu@gmail.com}{{adrian.horlescu@gmail.com}} $|$ 
+    \href{https://horly.dev}{{horly.dev}} $|$
+    \href{https://github.com/horlesq}{{github.com/horlesq}} $|$
+    \href{https://linkedin.com/in/adrian-horlescu}{{linkedin.com/in/adrian-horlescu}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Technical University of Cluj-Napoca}{Cluj-Napoca, Romania}
+      {Bachelor of Engineering - Faculty of Automation and Computer Science}{2016 -- 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Embedded Software Developer}{Mar. 2023 -- Aug. 2024}
+      {EEINS}{Remote}
+      \resumeItemListStart
+        \resumeItem{Worked in a Scrum team on AUTOSAR-based development for Body Control Module project for BMW}
+        \resumeItem{Contributed to the Secure Energy Supply (SEV) module by designing and implementing a state machine to interrupt power to consumers}
+        \resumeItem{Defined detailed software designs and wrote and automated unit, software, and integration tests to ensure quality}
+        \resumeItem{Collaborated in a Pre-Analysis team to debug customer-detected issues and analyze automotive test suites, CAN, and Ethernet traces}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Embedded Software Developer}{Oct. 2020 -- Feb. 2023}
+      {Marelli}{Cluj-Napoca, Romania}
+      \resumeItemListStart
+        \resumeItem{Developed the self-leveling system for vehicle headlights for Automotive Lightning project for Stellantis}
+        \resumeItem{Implemented three key modules: ICU Driver for reading leveling sensor data, Pitch module to calculate pitch angle, CddDcm to control the headlamp's motor}
+        \resumeItem{Ensured quality through unit testing, documentation in DOORS, and validation on the physical test bench}
+        \resumeItem{Utilized tools like CANoe, oscilloscope, and signal generators for testing and validation}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Marelli Academy Trainee}{July 2020 -- Sep. 2020}
+      {Marelli}{Cluj-Napoca, Romania}
+      \resumeItemListStart
+        \resumeItem{Completed comprehensive training program covering Linux, C, C++, Embedded Systems, Git, Python, IoT, CANoe, and Functional Safety}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{City Breaks Diary} $|$ \emph{React, FastAPI, MongoDB, Leaflet, Netlify, Heroku}}{Personal Project}
+          \resumeItemListStart
+            \resumeItem{Created a travel logging application where users can pin locations, track adventures, and add notes}
+            \resumeItem{Developed a responsive web application using React for the frontend and FastAPI for the backend}
+            \resumeItem{Implemented MongoDB for storing user data and trip information with secure authentication}
+            \resumeItem{Integrated Leaflet for interactive map functionality, enabling users to pin locations and view city details}
+            \resumeItem{Deployed the frontend on Netlify and the backend on Heroku for seamless integration and scalability}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Sentiment Analysis} $|$ \emph{React, FastAPI, Python, Hugging Face}}{Personal Project}
+          \resumeItemListStart
+            \resumeItem{Developed a web application to analyze user-submitted text for sentiment using a multilingual model}
+            \resumeItem{Integrated a React frontend with a FastAPI backend to provide real-time sentiment results for various languages}
+            \resumeItem{Implemented a natural language processing pipeline using Hugging Face's transformer models to classify text sentiment as positive, negative, or neutral}
+            \resumeItem{Implemented history tracking for past analyses}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: MATLAB, C, C++, Python, JavaScript, TypeScript} \\
+     \textbf{Frameworks and Libraries}{: Flutter, Astro, React, NextJS, Tailwind, FastAPI} \\
+     \textbf{Development and Testing Tools}{: Git, Postman, CANoe, TRACE32, Tresos, Wireshark} \\
+     \textbf{Project Management Tools}{: DOORS, Jira, Confluence} \\
+     \textbf{Languages}{: English (C1), Romanian (Native)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
